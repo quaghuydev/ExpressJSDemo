@@ -1,0 +1,26 @@
+{
+    "name": "expressjs",
+    "version": "1.0.0",
+    "description": "Demo expressJs",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --inspect index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/quaghuydev/ExpressJSDemo.git"
+    },
+    "author": "Bui Quang Huy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/quaghuydev/ExpressJSDemo/issues"
+    },
+    "homepage": "https://github.com/quaghuydev/ExpressJSDemo#readme",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
