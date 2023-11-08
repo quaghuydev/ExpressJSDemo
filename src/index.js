@@ -4,6 +4,7 @@ const exphbs = require("express-handlebars");
 const app = express();
 const morgan = require("morgan");
 const port = 3000;
+const route = require('./routes');
 
 // Create an instance of the handlebars engine
 const hbs = exphbs.create({extname: '.hbs'});
@@ -15,15 +16,13 @@ app.set('views',path.join(__dirname,'resources/views'));
 console.log(__dirname)
 // HTTP logger
 app.use(morgan("combined"));
-
+//
 //public
 app.use(express.static(path.join(__dirname,"public")));
 
 // Routes
+route(app);
 
-app.get("/", (req, res) => {
-  res.render('home');
-});
 
 app.listen(port, () => {
   console.log(`Example app listening on port: http://localhost:${port}`);
